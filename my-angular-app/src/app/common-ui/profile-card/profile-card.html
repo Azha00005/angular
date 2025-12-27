@@ -1,0 +1,29 @@
+@if (profile) {
+    <div class="profile-card">
+        <div class="avatar-name">
+            <img class="profile-card__avatar" src="favicon.ico" alt="">
+            <div class="profile-card__name">
+                <strong class="h6">{{ profile.name }} {{profile.username}}</strong>
+                <span>{{profile.email}}</span>
+            </div>
+        </div>
+        <div class="profile-card__description">
+            {{ profile.company.name }} — {{ profile.company.catchPhrase }}
+        </div>
+    
+        <div class="profile-card__tags">
+            <div class="skill-tags">
+                {{ profile.address.street}}
+                {{ profile.address.suite}}
+                {{ profile.address.city}}
+            </div>
+           
+        </div>
+    
+        <div class="profile-card__action-btns">
+            <div class="btn">
+                Follow
+            </div>
+        </div>
+    </div>
+}

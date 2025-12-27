@@ -1,0 +1,9 @@
+@if (profile(); as profile) {
+    <img class="subscriber-avatar" src="favicon.ico" [alt]="profile.name">
+} 
+
+<div class="username-and-name">
+    <h1 class="h1">
+        {{ profile()?.name || 'Unknown User' }}        
+    </h1>
+</div>
